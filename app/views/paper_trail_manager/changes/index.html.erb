@@ -11,13 +11,25 @@
   <tfoot>
     <tr>
       <td colspan='2'>
+        <%= will_paginate @versions %>
       </td>
     </tr>
   </tfoot>
   <thead>
     <tr class='changes_header'>
+      <th class='change_number'>Change</th>
       <th class='change_time'>Time</th>
+      <th class='change_details'>Action</th>
+      <th class='change_details'>Table</th>
+      <th class='change_details'>Record</th>
+      <th class='change_details'>Object</th>
+      <% if PaperTrailManager.whodunnit_class && version.whodunnit %>
+        <th class='change_details'>
+          Changed by
+        </th>
+      <% end %>
       <th class='change_details'>Attribute with previous and current values</th>
+      <th class='change_details'>Change</th>
     </tr>
   </thead>
   <tbody>
@@ -31,4 +43,3 @@
     <% end %>
   </tbody>
 </table>
-
