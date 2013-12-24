@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Igal Koshevoy"]
-  s.date = "2012-08-13"
-  s.description = "A user interface for `paper_trail` versioning data in Ruby on Rails 3 applications."
-  s.email = "igal@pragmaticraft.com"
+  s.authors = ["Igal Koshevoy","Anthony T. Sansone"]
+  s.date = "2013-12-29"
+  s.description = "A user interface for `paper_trail` versioning data in Ruby on Rails 1 applications."
+  s.email = "anthony@anthony-sansone.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -376,7 +376,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<rails>, ["~> 3.0"])
+    s.add_dependency(%q<rails>, ["~> 4.0"])
     s.add_dependency(%q<paper_trail>, ["~> 2.0"])
     s.add_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
     s.add_dependency(%q<rdoc>, [">= 0"])
