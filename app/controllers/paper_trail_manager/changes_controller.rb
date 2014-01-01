@@ -9,7 +9,7 @@ class PaperTrailManager::ChangesController < ApplicationController
       return(redirect_to root_url)
     end
 
-    @versions = PaperTrail::Version.order('created_at DESC, id DESC')
+    @versions = PaperTrail::Version.order('created_at DESC, id DESC').page(params[:page])
     if params[:type]
       @versions = @versions.where(:item_type => params[:type])
     end
