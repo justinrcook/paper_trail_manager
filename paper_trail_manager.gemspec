@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "paper_trail_manager"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igal Koshevoy","Anthony T. Sansone"]
-  s.date = "2013-12-29"
+  s.date = "2014-01-02"
   s.description = "A user interface for `paper_trail` versioning data in Ruby on Rails 1 applications."
   s.email = "anthony@anthony-sansone.com"
   s.extra_rdoc_files = [
@@ -361,7 +361,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rake>, [">= 0"])
       s.add_runtime_dependency(%q<rails>, ["~> 4.0"])
       s.add_runtime_dependency(%q<paper_trail>, ["~> 3.0"])
-      s.add_runtime_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
+      s.add_runtime_dependency(%q<kaminari>, ["~> 0.15.0"])
       s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
       s.add_development_dependency(%q<sqlite3-ruby>, [">= 0"])
@@ -369,7 +369,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rake>, [">= 0"])
       s.add_dependency(%q<rails>, ["~> 4.0"])
       s.add_dependency(%q<paper_trail>, ["~> 3.0"])
-      s.add_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
+      s.add_dependency(%q<kaminari>, ["~> 0.15.0"])
       s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
       s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
@@ -378,7 +378,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rake>, [">= 0"])
     s.add_dependency(%q<rails>, ["~> 4.0"])
     s.add_dependency(%q<paper_trail>, ["~> 3.0"])
-    s.add_dependency(%q<will_paginate>, ["~> 3.0.pre2"])
+    s.add_dependency(%q<kaminari>, ["~> 0.15.0"])
     s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
     s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
