@@ -2,27 +2,30 @@
 <h1>Changes</h1>
 
 <p>
-  Show:
-<div class="btn-group">
-  <%= (
-      [
-      link_to('All', changes_path, {class: "btn btn-default"})
-      ] + 
-      change_item_types.map {
-        |type|
-        link_to(type.pluralize, 
-                changes_path(:type => type), 
-                {class: "btn btn-default"}
-                )
-      }).join('').html_safe %>
-  <button type="button" class="btn btn-default">
-    <%= link_to 'Changes feed', 
-                changes_path(:format => 'atom'), 
-                class: "btn btn-default" %>
-  </button>
-</div>
+  <div class="btn-toolbar" role="toolbar">
+    Show:
+    <div class="btn-group">
+      <%= (
+          [
+          link_to('All', changes_path, {class: "btn btn-default"})
+          ] + 
+          change_item_types.map {
+            |type|
+            link_to(type.pluralize, 
+                    changes_path(:type => type), 
+                    {class: "btn btn-default"}
+                    )
+          }).join('').html_safe %>
+    </div>
+    <div class="btn-group">
+      <a class="btn btn-default">
+        <%= link_to 'Changes feed', 
+                    changes_path(:format => 'atom'), 
+                    class: "btn btn-default" %>
+      </a>
+    </div>
+  </div>
 </p>
-</div>
 
 
 <div class="row">
