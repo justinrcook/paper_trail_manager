@@ -3,8 +3,8 @@
     <span class='change_id'><%= version.id %></span>
   </td>
   <td class='change_time'>
-    <div class='date'> <%= version.created_at.strftime('%Y-%m-%d') %> </div>
-    <div class='time'> <%= version.created_at.strftime('%H:%M:%S') %> </div>
+    <span class='date'> <%= version.created_at.strftime('%Y-%m-%d') %> </span>
+    <span class='time'> <%= version.created_at.strftime('%H:%M:%S') %> </span>
   </td>
   <td class='change_details'>
       <strong class='event'><%= version.event %></strong>
