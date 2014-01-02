@@ -11,8 +11,9 @@
       change_item_types.map {
         |type|
         link_to(type.pluralize, 
-                changes_path(:type => type)), 
+                changes_path(:type => type), 
                 {class: "btn btn-default"}
+                )
       }).join('').html_safe %>
   <button type="button" class="btn btn-default">
     <%= link_to 'Changes feed', changes_path(:format => 'atom'), class: "btn btn-default") %>
