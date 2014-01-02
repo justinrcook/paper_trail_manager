@@ -4,7 +4,12 @@
 <p>
   Show:
 <div class="btn-group">
-  <%= ([link_to('All', changes_path, class: "btn btn-default")] + change_item_types.map { |type| link_to(type.pluralize, changes_path(:type => type)), class: "btn btn-default" }).join('').html_safe %>
+  <%= ([link_to('All', changes_path, class: "btn btn-default")] %>
+  <%= change_item_types.map { 
+      |type| 
+      link_to(type.pluralize, 
+              changes_path(
+              :type => type), class: "btn btn-default") }).html_safe %>
     <%= link_to 'Changes feed', changes_path(:format => 'atom'), class: "btn btn-default") %>
 </div>
 </p>
