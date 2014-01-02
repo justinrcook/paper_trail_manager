@@ -16,7 +16,9 @@
                 )
       }).join('').html_safe %>
   <button type="button" class="btn btn-default">
-    <%= link_to 'Changes feed', changes_path(:format => 'atom'), class: "btn btn-default") %>
+    <%= link_to 'Changes feed', 
+                changes_path(:format => 'atom'), 
+                class: "btn btn-default" %>
   </button>
 </div>
 </p>
