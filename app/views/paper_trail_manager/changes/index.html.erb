@@ -6,7 +6,7 @@
   Show:
 <div class="btn-group">
   <button type="button" class="btn btn-default">
-  <%= ([link_to('All', changes_path)] + change_item_types.map { |type| link_to(type.pluralize, changes_path(:type => type)) }).join(' | ').html_safe %>
+  <%= ([link_to('All', changes_path)] + change_item_types.map { |type| link_to(type.pluralize, changes_path(:type => type)) }).join('</button><button type="button" class="btn btn-default">').html_safe %>
   </button>
 <div>
 </p>
