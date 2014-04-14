@@ -90,7 +90,7 @@ protected
 
   # Return the URL for the item represented by the +version+, e.g. a Company record instance referenced by a version.
   def change_item_url(version)
-    return send("#{version.item_type.downcase}_url", version.item_id)
+    return send("#{version.item_type.underscore}_url", version.item_id)
   rescue NoMethodError
     return nil
   end
